@@ -2,26 +2,68 @@
 let resultCount=0;
 let currentQuestion=0;
 
-initTest();
-
 function initTest() {
+	document.getElementById('js-helloPage').classList.add('-hidden');
+	document.getElementById('js-question').classList.remove('-hidden');
+
 	document.getElementById('js-totalQuestionCount').innerText = questions.length;
 	setQuestionData();
-}
+};
 
 function setQuestionData() {
 	document.getElementById('js-questionText').innerText = questions[currentQuestion].questionText;
 	document.getElementById('js-questionNumber').innerText = currentQuestion + 1;
 	document.getElementById('js-answers').innerHTML = getAnswersMarkdown(questions[currentQuestion].answers);
-}
+};
 
 
 function getAnswersMarkdown(answers) {
 	let result='';
 
 	answers.forEach(answer=> {
-		result = result + '<li><button class="button">'+answer.answerText+'</li></button>';
+		result += 
+		'<li>'+
+			'<button class="button" onclick="onAnswerClick(' + answer.value + ')">'
+				+answer.answerText+
+			'</button>'+
+		'</li>';
 	})
 
 	return result;
+};
+
+function onAnswerClick(answerValue){
+	resultCount += answerValue;
+	currentQuestion++;
+
+	if(currentQuestion < questions.length){
+		setQuestionData();
+	} else {
+		showResult();
+	}
+};
+
+function showResult(){
+	document.getElementById('js-question').classList.add('-hidden');
+	document.getElementById('js-result').classList.remove('-hidden')
+
+	let result = 0;
+
+	if (resultCount>8) {
+		result=resultData.Bereza
+	} else {
+		result=resultData.Dub
+	}
+
+	document.getElementById('js-resultTitle').innerText=result.Title
+	document.getElementById('resultDescription').innerText=result.Desc
+	document.getElementById('js-resultImage').src=result.Image
+}
+
+function restartTest(){
+	document.getElementById('js-result').classList.add('-hidden');
+	document.getElementById('js-question').classList.remove('-hidden');
+	resultCount=0;
+	currentQuestion=0;
+	initTest();
 }

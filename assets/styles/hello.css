@@ -1,7 +1,7 @@
-.question{
+.helloPage{
 	display: block;
 }
 
-.question.-hidden{
+.hello-page.-hidden{
 	display: none;
 }

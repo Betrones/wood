@@ -16,6 +16,25 @@ const questions=[
 			{answerText: 'Нет', value: 3},
 			{answerText: 'Кто здесь?', value: 2},
 		]
+	},
+
+	{
+		questionText: 'Привет',
+		answers:[
+			{answerText: 'Привет', value: 2},
+			{answerText: 'Доброе утро', value: 3},
+			{answerText: 'нет', value: 3},
+			{answerText: ' ', value: 3}
+		]
+	},
+
+	{
+		questionText: 'Вы сидите на месте и ничего не делаете',
+		answers:[
+			{answerText: 'Да', value: 1},
+			{answerText: 'Нет', value: 3},
+			{answerText: 'Кто здесь?', value: 2},
+		]
 	}
 ]
 

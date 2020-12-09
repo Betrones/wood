@@ -1,56 +1,78 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Какое ты дерево</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<title>Какое ты дерево</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" 
-		  type="text/css" 
-		  href="./assets/styles/base.css"
-	>
-	<link rel="stylesheet" 
-		  type="text/css" 
-		  href="./assets/styles/container.css"
-	>
-	<link rel="stylesheet" 
-		  type="text/css" 
-		  href="./assets/styles/content.css"
-	>
-	<link rel="stylesheet" 
-		  type="text/css" 
-		  href="./assets/styles/question.css"
-	>
-	<link rel="stylesheet" 
-		  type="text/css" 
-		  href="./assets/styles/variables.css"
-	>
-</head>
-<body>
-	<div class="container">
-		<div class="content" id="js-content">
-			<div class="question">
-				<div class="question__header">
-					<h2 class="question__text" id="js-questionText"></h2>
-					<div class="question__count">
-						<a href="https://youtu.be/dQw4w9WgXcQ?t=43"><span class="question__number" id="js-questionNumber"></span>/<span id="js-totalQuestionCount"></span></a>
-					</div>
+		<link rel="stylesheet" 
+			  type="text/css" 
+			  href="./assets/styles/base.css"
+		>
+		<link rel="stylesheet" 
+			  type="text/css" 
+			  href="./assets/styles/container.css"
+		>
+		<link rel="stylesheet" 
+			  type="text/css" 
+			  href="./assets/styles/content.css"
+		>
+		<link rel="stylesheet" 
+			  type="text/css" 
+			  href="./assets/styles/question.css"
+		>
+		<link rel="stylesheet" 
+			  type="text/css" 
+			  href="./assets/styles/variables.css"
+		>
+		<link rel="stylesheet" 
+			  type="text/css" 
+			  href="./assets/styles/result.css"
+		>
+		<link rel="stylesheet" 
+			  type="text/css" 
+			  href="./assets/styles/hello.css"
+		>
+	</head>
+	<body>
+		<div class="container">
+
+
+			<div class="content" id="js-content">
+				<div class="hello-page" id="js-helloPage">
+					<h1 class="hello__title"> Какое ты дерево? </h1>
+					<p class="hello__desc">Почувствуй себя деревом! А также узнай, какое бревно тебе по душе</p>
+					<button class="button" id="js-startButton" onclick="initTest()">Начать тест</button>
 				</div>
 
-				<ul class="question__answers" id="js-answers">
-					<!-- <li>Скорее побегу на помощь ребятам, которые отбираютю Всместе поделим добычу</li>
-					<li>Пойду и отберу телефоны у всех, кто за углом</li>
-					<li>Пройду мимо, потому что у меня тоже Iphone®12®, мало ли отберут</li>
-					<li>Такое нельзя оставлять просто так, Я побегу спасать бедолагу и раскидаю мерзавцев</li> -->
-				</ul>
+				<div class="question -hidden" id="js-question">
+					<div class="question__header">
+						<h2 class="question__text" id="js-questionText"></h2>
+						<div class="question__count">
+							<a href="https://www.youtube.com/watch?v=E8gmARGvPlI"><span class="question__number" id="js-questionNumber"></span>/<span id="js-totalQuestionCount"></span></a>
+						</div>
+					</div>
+
+					<ul class="question__answers" id="js-answers">
+							
+					</ul>
+				</div>
+
+				<div class="result -hidden" id="js-result">
+					<h2 class="result__text" id="js-resultTitle"></h2>
+					<img src="" alt="" id="js-resultImage" class="result__image">
+
+					<p class="result__description" id="resultDescription"></p>
+					<button class="result__restart" onclick="restartTest()"> Пройти заново </button>
+				</div>
 			</div>
 		</div>
-	</div>
 
-
-	<script type="text/javascript" 
-			src="./assets/scripts/questions.js"></script>
-	<script type="text/javascript" 
-			src="./assets/scripts/main.js"></script>
-</body>
+		<script type="text/javascript" 
+				src="./assets/scripts/resultData.js"></script>
+		<script type="text/javascript" 
+				src="./assets/scripts/questions.js"></script>
+		<script type="text/javascript" 
+				src="./assets/scripts/main.js"></script>
+	</body>
 </html>
