@@ -49,10 +49,14 @@ function showResult(){
 
 	let result = 0;
 
-	if (resultCount>8) {
-		result=resultData.Bereza
+	if (resultCount>12) {
+		result = resultData.Bereza
+	} else if (resultCount>8){
+		result=resultData.Klen
+	} else if (resultCount>4){
+		result = resultData.Dub
 	} else {
-		result=resultData.Dub
+		result = resultData.Cash
 	}
 
 	document.getElementById('js-resultTitle').innerText=result.Title
