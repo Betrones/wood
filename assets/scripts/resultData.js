@@ -1,27 +1,27 @@
 const resultData = {
 	Bereza: {
 		Title: 'Ты - береза!',
-		Image: './assets/img/bereza.jpg',
+		Image: 'assets/img/bereza.jpg',
 		Desc: 'Ты - клен! Роняешь на головы проходящих мимо людей своих младших клонов, но не пытаешься убивать с их помощью. А еще осенью ты становишься красивее'
 		
 	},
 
 	Dub: {
 		Title: 'Дуб дубом',
-		Image: './assets/img/dub.jpg',
+		Image: 'assets/img/dub.jpg',
 		Desc: 'Ты стоишь, и все. Зато красивый, полосатый, черно-белый'
 	},
 
 	Cash: {
 		Title: 'Атака с воздуха!',
-		Image: './assets/img/cash.jpg',
+		Image: 'assets/img/cash.jpg',
 		Desc: 'Ты стоишь. Усиленно стоишь, но ничего более... Большой и широкий.'
 		
 	},
 
 	Klen: {
 		Title: 'Какой красный 0.o',
-		Image: './assets/img/klen.jpg',
+		Image: 'assets/img/klen.jpg',
 		Desc: 'Ты - каштан! Роняешь на головы проходящих мимо людей своих младших клонов (а также очень хочешь быть похожим на дуб)'
 	},
 }
