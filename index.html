@@ -5,6 +5,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<link rel="preconnect" 
+			  href="https://fonts.gstatic.com"
+		>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" 
+			  rel="stylesheet"
+		>
 		<link rel="stylesheet" 
 			  type="text/css" 
 			  href="./assets/styles/base.css"
@@ -33,7 +39,11 @@
 			  type="text/css" 
 			  href="./assets/styles/hello.css"
 		>
-	</head>
+		<link rel="stylesheet" 
+			  type="text/css" 
+			  href="./assets/styles/button.css"
+		>
+<script type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>	</head>
 	<body>
 		<div class="container">
 
@@ -60,10 +70,14 @@
 
 				<div class="result -hidden" id="js-result">
 					<h2 class="result__text" id="js-resultTitle"></h2>
-					<img src="" alt="" id="js-resultImage" class="result__image">
 
 					<p class="result__description" id="resultDescription"></p>
+					<img src="" alt="" id="js-resultImage" class="result__image">
+
+					<div class="result__share" id="js-resultShare"></div>
 					<button class="result__restart" onclick="restartTest()"> Пройти заново </button>
+
+
 				</div>
 			</div>
 		</div>

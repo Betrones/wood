@@ -1,6 +1,6 @@
 body, h1, h2, h3, h4, p, ul, ol, li {
 	margin: 0;
-	font-family: "Helvetica";
+	font-family: 'Noto Sans JP', sans-serif;
 }
 
 body {
@@ -8,6 +8,11 @@ body {
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
+
+	background-image: url(../img/bg.jpg);
+	/*background-color: #0cfff9;*/
+	background-repeat: no-repeat;
+	background-size: 100vw;
 }
 
 * {

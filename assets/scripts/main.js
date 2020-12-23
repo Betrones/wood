@@ -59,9 +59,22 @@ function showResult(){
 		result = resultData.Cash
 	}
 
-	document.getElementById('js-resultTitle').innerText=result.Title
-	document.getElementById('resultDescription').innerText=result.Desc
-	document.getElementById('js-resultImage').src=result.Image
+	document.getElementById('js-resultTitle').innerText=result.Title;
+	document.getElementById('resultDescription').innerText=result.Desc;
+	document.getElementById('js-resultImage').src=result.Image;
+
+	document.getElementById('js-resultShare').innerHTML=VK.Share.button(
+		{
+			url: 'https://betrones.github.io/wood/',
+			title: result.Title,
+			image: result.Image,
+			noparse: true,
+		},
+		{
+			type: 'round_nocount',
+			text: 'Я - единорог'
+		}
+	);
 }
 
 function restartTest(){
