@@ -67,7 +67,7 @@ function showResult(){
 		{
 			url: 'https://betrones.github.io/wood/',
 			title: result.Title,
-			image: 'https://betrones.github.io/wood/'result.Image,
+			image: 'https://betrones.github.io/wood/'+result.Image,
 			noparse: true,
 		},
 		{
